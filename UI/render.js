@@ -4,7 +4,7 @@ function searchPhoto()
 {
 
   var apigClient = apigClientFactory.newClient({
-                     apiKey: "UbK8pC2c8KZmzYOgKfXu7GnuBzUMW3I94mCPnN56"
+                     apiKey: "{{API Key}}"
         });
 
     var user_message = document.getElementById('note-textarea').value;
@@ -77,7 +77,7 @@ function uploadPhoto()
      data => {
      console.log(data)
      var apigClient = apigClientFactory.newClient({
-                       apiKey: "UbK8pC2c8KZmzYOgKfXu7GnuBzUMW3I94mCPnN56"
+                       apiKey: "{{API Key}}"
           });
 
      // var data = document.getElementById('file_path').value;
