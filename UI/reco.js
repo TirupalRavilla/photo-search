@@ -7,7 +7,7 @@ var target_language = 'es'
 
 var bucketName = "trr-audio-transcribe";
 var bucketRegion = "REGION";
-var IdentityPoolId = "us-east-1:f2b048f4-34d9-4ba5-b750-aeabc2e0a4b9";
+var IdentityPoolId = "{{Identity poos ID}}";
 
 AWS.config.update({
   region: awsRegion,
