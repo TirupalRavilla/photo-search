@@ -49,7 +49,7 @@ def lambda_handler(event, context):
     
     
     
-    host = "https://vpc-photos-pec7broaqfe7ghfrnfbyoife64.us-east-1.es.amazonaws.com"
+    host = "{{VPC URL}}"
     index = "photos"
     type = "dog"
     
@@ -63,7 +63,7 @@ def lambda_handler(event, context):
     numr= random.randint(0,99999)
     print("Rand num: ", numr)
     headers = {"Content-Type": "application/json"}
-    #url2 = "https://vpc-photos-b4al4b3cnk5jcfbvlrgxxu3vhu.us-east-1.es.amazonaws.com/photos/_search?pretty=true&q=*:*"
+    
     r = requests.post(url + str(numr), data=json.dumps(format).encode("utf-8"), headers=headers)
     #resp_elastic = requests.get(url2,headers={"Content-Type": "application/json"}).json()
     #print('<------------------GET-------------------->')
