@@ -72,7 +72,7 @@ def search_intent(labels):
     # key1 = get_slots(intent_request)['keyone']
     # key2 = get_slots(intent_request)['keytwo']
     # key3 = get_slots(intent_request)['keythree']
-    url = 'https://vpc-photos-pec7broaqfe7ghfrnfbyoife64.us-east-1.es.amazonaws.com/photos/_search?q='
+    url = '{{VPC search URL}}'
     #labels = [key1,key2,key3]
     resp = []
     for label in labels:
@@ -89,7 +89,7 @@ def search_intent(labels):
                 key = val['_source']['objectKey']
                 if key not in output:
                     output.append(key)
-    #url = "https://vpc-photos-pec7broaqfe7ghfrnfbyoife64.us-east-1.es.amazonaws.com/photos/_search?pretty=true&q=*:*"
+   
     #print(url)
     #resp = requests.get(url,headers={"Content-Type": "application/json"}).json()
     #resp = requests.get(url)
